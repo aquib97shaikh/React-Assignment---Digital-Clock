@@ -11,14 +11,14 @@ class App extends Component {
   }
   getTimeString() {
     const currentTime = this.state.time;
-    const pad = (x) => x.toString().padStart(2, "0");
-    const [hrs, min, sec] = [
-      currentTime.getHours(),
-      currentTime.getMinutes(),
-      currentTime.getSeconds(),
-    ];
-    const pm = hrs >= 12 ? " PM" : " AM";
-    const hr = hrs > 12 ? hrs - 12 : hrs;
+//     const pad = (x) => x.toString().padStart(2, "0");
+//     const [hrs, min, sec] = [
+//       currentTime.getHours(),
+//       currentTime.getMinutes(),
+//       currentTime.getSeconds(),
+//     ];
+//     const pm = hrs >= 12 ? " PM" : " AM";
+//     const hr = hrs > 12 ? hrs - 12 : hrs;
     let string = new Date().toLocaleTimeString();
 //     `${pad(hr)}:${pad(min)}:${pad(sec)}${pm}`;
     return string;
