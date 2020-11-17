@@ -19,7 +19,8 @@ class App extends Component {
     ];
     const pm = hrs >= 12 ? " PM" : " AM";
     const hr = hrs > 12 ? hrs - 12 : hrs;
-    let string = `${pad(hr)}:${pad(min)}:${pad(sec)}${pm}`;
+    let string = new Date().toLocaleTimeString();
+//     `${pad(hr)}:${pad(min)}:${pad(sec)}${pm}`;
     return string;
   }
   componentDidMount() {
